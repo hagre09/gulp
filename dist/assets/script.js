@@ -1,0 +1,1 @@
+var i=0;document.querySelectorAll("img").forEach((function(){var e,t,l=1,r=document.querySelectorAll("img")[i++];r.onmouseover=function(){clearInterval(e),t=setInterval((()=>{l>.3?(l-=.1,this.style.opacity=l):clearInterval(t)}),50)},r.onmouseout=function(){clearInterval(t),e=setInterval((()=>{l<1?(l+=.1,this.style.opacity=l):clearInterval(e)}),50)}}));
